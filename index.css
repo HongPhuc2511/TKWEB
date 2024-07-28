@@ -1,0 +1,116 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tieude{
+    display: flex;
+    background-color: rgb(16, 90, 133);
+}
+.tieude li:nth-child(5){
+
+}
+.tieude li:hover{
+    background-color: darkblue;
+    color: white;
+}
+.tieude li{
+    padding: 15px;
+    list-style: none;
+    margin: 5px;
+    border-right: 1px solid white;
+}
+.diendan{
+display: flex;
+background: linear-gradient(rgb(8, 8, 124),blue);
+align-items: center;
+}
+.diendan img{
+    width: 30%;
+}
+.diendan h2{
+    font-size: 2.5rem;
+    text-shadow: 0 3px 3px 3px;
+    color: white;
+    text-align: center;
+}
+.forum{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.avatar{
+    width: 120px;
+}
+.forums p{
+    margin: 0 auto;
+}
+.a{
+    direction: none;
+    color: darkblue;
+}
+.foru{
+    font-size: 1.5rem;
+    color: white;
+    margin: 3px auto 0px;
+    background-color: rgb(34, 103, 194);
+    width: 70%;
+    border-radius: 5px 5px 0 0;
+}
+.foru p{
+    padding: 5px;
+}
+.forums :nth-child(4){
+    border-radius: 0 0 5px 5px;
+}
+.forum a{
+    text-decoration: none;
+}
+.forum span{
+    color: darkblue;
+    cursor: pointer;
+}
+.binhluan{
+    color: white;
+}
+.binhluan:hover{
+    color: darkblue;
+}
+.quangcao li{
+    list-style: none;
+    background: linear-gradient(darkblue,blue);
+    color:white;
+    width: 10%;
+    padding:4rem;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.quangcao li:nth-child(1){
+    position: fixed;
+    left: 0.5%;
+}
+.quangcao li:nth-child(2){
+    position: fixed;
+    right: 0.5%;
+}
+.foot li{
+    list-style: none;padding: 5px;
+}
+.foot{
+    margin: 5px;
+    background-color:rgb(16, 90, 133) ;
+    color: white;
+}
