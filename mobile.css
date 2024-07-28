@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.quangcao{
+    display: none;
+}
+.tieude li{
+    border: none;
+    padding: 5px;
+}
+.tieude{
+    display: block;
+}
+.forum{
+    width: 100%;
+    flex-direction: column;
+}
+.diendan img{
+    width: 100%;
+    max-width: 100%;
+}
+.diendan h2{
+    font-size: 1.5rem;
+}
+.foru{
+    width: 100%;
+}
