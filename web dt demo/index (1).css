@@ -1,0 +1,112 @@
+.flex{
+    display: flex;
+}
+.menu{
+    width: 100%;
+    background: linear-gradient(blue,lightblue);
+    padding: 0rem;
+    margin: 0rem;
+}
+.menu>li{
+    list-style: none;
+    color: whitesmoke;
+    padding: 1.5rem ;
+    border-right: 1px solid white;
+}
+.menu>li>a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.menu>li:nth-child(5){
+    margin-left: auto;
+}
+.menu>li:hover{
+    background-color: darkblue;
+    color: white;
+}
+.box{
+    box-sizing: border-box;
+}
+.products{
+    flex-wrap: wrap;
+}
+.product{
+    width: 20%;
+}
+.product>div{
+    text-align: center;
+    background: linear-gradient(lightblue,blue);
+    color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+    margin: 5px;
+    padding: 20px 0px 3px 0px;
+}
+.product:hover{
+    transform:translateY(-3px)
+}
+.price{
+    background-color: rgba(7, 109, 84,0.7);
+    position: absolute;
+    border-radius: 10px 0px;
+    padding: 5px;
+    left: 0px;
+    top: -16px;
+}
+.product img{
+    width: 100%;
+}
+.details{
+    width: 70%;
+    margin: 0px auto;
+}
+.details>div{
+    width: 100%;
+}
+.left img{
+    width: 100%;
+}
+
+.thumb div{
+    width: 20%;
+}
+.right>h2{
+    color: red;
+}
+.he{
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    padding-left: 5px;
+}
+.he.llo{
+    border: 1px solid red;
+}
+footer{
+    background: linear-gradient(blue,lightblue);
+    padding: 3px;
+    color: whitesmoke;
+    overflow: hidden;
+}
+footer h2{
+    animation: move 10s linear infinite ;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes move {
+    from{left: 0%;}
+    to{left: 100%;}
+}
+button{
+    width: 10%;
+    height: 35px;
+}
+input{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid blue;
+    overflow: hidden;
+}
