@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành viên</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="img/icon-sap-chieu.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <div class="menucodinh">
+        <div>
+            <ul class="menu flex">
+                <li><a href="trang chủ.html">TRANG CHỦ</a></li>
+                <li><a href="phim.html">PHIM</a></li>
+                <li><a href="lichchieu.html">LỊCH CHIẾU</a></li>
+                <li><a href="giave.html">GIÁ VÉ</a></li>
+                <li><a href="thanhvien.html">THÀNH VIÊN</a></li>
+                <li><a href="uudaivasukien.html">ƯU ĐÃI-SỰ KIỆN</a></li>
+                <li><a href="danhgiaphim.html">ĐÁNH GIÁ PHIM</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="">DỊCH VỤ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <div class="flex">
+            <div class="img">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="tieude">
+                <div class="tieude1 flex">
+                    <img src="img/dat-ve-ngay.png" alt="hoạt họa">
+                    <div class="timkiem">
+                        <input type="text" placeholder="Bạn tìm gì...">
+                        <i class="fa-solid fa-magnifying-glass"></i>   
+                    </div>
+                    <div class="bongngo">
+                        <img src="img/bong-ngo.png" alt="bỏng ngô">
+                        <img src="img/so-da.png" alt="soda">
+                    </div>
+                    <div class="button">
+                        <button id="sign">ĐĂNG KÍ</button>
+                            <div class="addres">
+                                <div class="addres-form flex">
+                                    <div class="dangki flex">
+                                        <h2>ĐĂNG KÍ</h2>
+                                        <span id="addres-close">x Đóng</span>
+                                    </div>
+                                    <div class="username">
+                                        <p>Tên đăng nhập</p>
+                                        <input type="text" placeholder="Username">
+                                        <p>Nhập mật khẩu</p>
+                                        <input type="password" placeholder="Password">
+                                        <p>Nhập lại mật khẩu</p>
+                                        <input type="password" placeholder="Confirm password">
+                                    </div>
+                                    <div class="remember flex">
+                                        <input type="checkbox" class="checkbox" />
+                                        <p>Remember me</p>
+                                    </div>
+                                    <div class="xacnhan">
+                                        <button>Xác nhận</button>
+                                    </div>
+                                    <div class="face flex">
+                                        <button><i class="fa-brands fa-facebook"></i></button>
+                                        <button><i class="fa-brands fa-google"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        <button id="sign-in">ĐĂNG NHẬP</button>
+                                <div class="address">
+                                    <div class="address-form">  
+                                        <div class="dangki flex">
+                                            <h2>ĐĂNG NHẬP</h2>
+                                            <span id="address-close">x Đóng</span>
+                                        </div>
+                                        <div class="username1">
+                                            <p>Tên đăng nhập</p>
+                                            <input type="text" placeholder="Username">
+                                            <p>Nhập mật khẩu</p>
+                                            <input type="password" placeholder="Password">
+                                        </div>
+                                        <div class="remember flex">
+                                            <input type="checkbox" class="checkbox" />
+                                            <p>Remember me</p>
+                                        </div>
+                                        <div class="xacnhan1">
+                                            <button>Xác nhận</button>
+                                        </div>
+                                        <div class="face flex">
+                                            <button><i class="fa-brands fa-facebook"></i></button>
+                                            <button><i class="fa-brands fa-google"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tieude2">
+                            <ul class="list flex">
+                                <li><a href="trang chủ.html">TRANG CHỦ</a></li>
+                                <li><a href="phim.html">PHIM</a></li>
+                                <li><a href="lichchieu.html">LỊCH CHIẾU</a>
+                                    <div class="lichchieu">
+                                        <p>Thứ 2-6:9h-21h</p>
+                                        <p>Thứ 7,CN:7h-24h</p>
+                                    </div>
+                                </li>
+                                <li><a href="giave.html">GIÁ VÉ</a>
+                                    <div class="giave">
+                                        <p>Trẻ em và người cao tuổi(70.000<sup>vnđ</sup>)</p>
+                                        <p>Học sinh ,sinh viên(80.000<sup>vnđ</sup>)</p>
+                                        <p>Người lớn(90.000<sup>vnđ</sup>)</p>
+                                    </div>
+                                </li>
+                                <li><a href="thanhvien.html">THÀNH VIÊN</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list list1 flex">
+                                <li><a href="uudaivasukien.html">ƯU ĐÃI-SỰ KIỆN</a>
+                                    <div class="sukien">
+                                        <p><a href="uudaivasukien.html">Tặng gấu bông</a></p>
+                                        <p><a href="uudaivasukien.html">Mua 3 tặng 1</a></p>
+                                        <p><a href="uudaivasukien.html">Mua bắp rang bơ tặng coc</a>a</p>
+                                    </div>
+                                </li>
+                                <li><a href="danhgiaphim.html">ĐÁNH GIÁ PHIM</a></li>
+                                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="">DỊCH VỤ</a>
+                                    <div class="dichvu">
+                                        <p>Dịch vụ-Tiện ích</p>
+                                        <p>Touch voucher</p>
+                                    </div>
+                                </li>
+                                <li><a href="">ĐẶT LỊCH</a></li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+    </div>
+    </header>
+    <div class="thanhvien head">
+        <h1>Chương trình thành viên Touch Cinema Membership | Tích điểm và đổi thưởng</h1>
+        <h3>THỂ LỆ VÀ QUY ĐỊNH VỀ CHƯƠNG TRÌNH THÀNH VIÊN TOUCH CINEMA</h3>
+        <h3>1. Cách đăng ký để trở thành khách hàng thành viên Touch Cinema</h3>
+        <ul>
+            <li>Nơi đăng ký bắt buộc:Quầy vé Touch Cinema <span>(LÀM THẺ HOÀN TOÀN MIỄN PHÍ)</span></li>
+            <li>Thông tin đăng ký cần có:Họ và tên, Số điện thoại, Số CMND, Ngày sinh</li>
+            <li>1 SĐT/CMND chỉ đăng ký được duy nhất 1 tài khoản/1 thẻ thành viên với 1 mã số duy nhất</li>
+            <li>Tài khoản được quyền sử dụng ngay</li>
+            <li> Trong trường hợp mất thẻ thành viên cần mang CMND đến quầy để làm lại thẻ</li>
+        </ul>
+        <p>ĐỂ KÍCH HOẠT THÀNH VIÊN ONLINE VÀ MUA VÉ VỚI GIÁ ƯU ĐÃI:</p>
+        <p>- Tài khoản online đăng ký số điện thoại trùng với số điện thoại mà bạn đã đăng ký THẺ THÀNH VIÊN (trùng cả về đầu số).</p>
+        <p>- Số điện thoại của tài khoản online phải được xác thực trong mục TÀI KHOẢN online.</p>
+        <h3>2. Hướng dẫn thể lệ tích điểm</h3>
+        <img src="img/thanhvien.png" alt="">
+        <ul>
+            <li>Touch Member (điểm tích lũy từ 0 – 3499 điểm).
+                Khách hàng đăng kí mới khi hoàn tất thanh toán giao dịch đầu tiên được cộng ngay 100 điểm
+                Cộng điểm đổi thưởng thêm 3% số tiền chi tiêu cho bắp nước và 5% số tiền chi tiêu cho vé</li>
+            <li>Touch Vip (điểm tích lũy từ 3500 – 7999 điểm).
+                Khách hàng lên hạng thẻ VIP được tặng 1 combo (1 nước ngọt + 1 bắp ngọt) và 3 vé xem phim 2D.
+                Cộng điểm đổi thưởng thêm 3% số tiền chi tiêu cho bắp nước và 7% số tiền chi tiêu cho vé</li>
+            <li>Touch Diamond (điểm tích lũy từ 8000 điểm trở lên).
+                Khách hàng lên hạng thẻ Diamond được tặng 2 combo [2 x (1 nước ngọt + 1 bắp ngọt)] và 5 vé xem phim 2D.
+                Cộng điểm đổi thưởng thêm 5% số tiền chi tiêu cho bắp nước và 10% số tiền chi tiêu cho vé</li>
+        </ul>
+        <h3>Khách hàng thành viên được tự động nâng hạng khi đủ điểm lên hạng mà không cần phải đợi xét duyệt vào cuối năm như các rạp khác. Khách hàng cần đến quầy đổi thẻ theo cấp hạng mới để được nhận quà trước khi số điểm bị reset vào cuối năm.</h3>
+        <p>Hạng thẻ của năm tiếp theo sẽ được tính dựa trên điểm tích lũy năm nay (tính tại thời điểm 31/12 hàng năm)</p>
+        <h3>4. Điều kiện sử dụng điểm</h3>
+        <img src="img/thanhvien1.png" alt="">
+        <ul>
+            <li>Điểm tích lũy là điểm dùng để xét cấp bậc hạng thẻ. Điểm thưởng là điểm dùng để đổi các phần quà tương ứng với số điểm.</li>
+            <li>Điểm thành viên bao gồm điểm tích lũy và điểm thưởng chỉ có giá trị sử dụng trong năm. Toàn bộ điểm sẽ được reset về 0 vào 23h59’ ngày 31/12 hàng năm.</li>
+            <li>Khi đổi thưởng, điểm tích lũy sẽ vẫn được giữ nguyên, chỉ có điểm thưởng bị trừ đi</li>
+            <li>Khách hàng thành viên có thể sử dụng điểm thưởng để đổi các phần quà tương ứng</li>
+        </ul>
+        <input type="text" placeholder="Viết bình luận...">
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="head flex">
+            <div class="flex">
+                <div class="foot-form">
+                    <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                    <p>Hotline:0123 456 789</p>
+                    <p>Giờ làm việc:8h-22h các ngày trong tuần</p>
+                    <p>Email: touchcinema@gmail.com</p>
+                </div>
+                <div class="foot-form">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div>
+                        <img src="img/icon-fb.png" alt="">
+                        <img src="img/icon-ytb.png" alt="">
+                    </div>
+                    <h3>Ứng dụng</h3>
+                    <img src="img/app-ios.png" alt="">
+                    <img src="img/app-android.png" alt="">
+                    <p>Phiên bản mobile</p>
+                </div>
+            </div>
+            <div class=" foot-form1 flex">
+                    <div>
+                    <p>Điều khoản chung</p>
+                    <p>Điều khoản giao dịch</p>
+                    <p>Chính sách thanh toán</p>
+                    <p>Chính sách bảo mật thông tin</p>
+                    <div class="email flex">
+                        <img src="img/icon-email.png" alt="">
+                        <p>Đăng kí nhận tin</p>
+                    </div>
+            </div>
+            <div class="foot-form2">
+                <p>Câu hỏi thường gặp</p>
+                <p>Hướng dẫn đặt vé online</p>
+                <p>Liên hệ</p>
+                <p>Tuyển dụng</p>
+                <img src="img/dathongbao.png" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="logo flex">
+            <img src="img/partner-2.png" alt="">
+            <img src="img/partner-3.png" alt="">
+        </div>  
+        <div class="bangtruyen">
+            <p>&copy;2018 Touch cinema</p>
+        </div>
+    </footer>
+    <div id="backtotop">
+        <i class="fa-solid fa-arrow-up arrow flex"></i>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

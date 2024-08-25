@@ -1,116 +1,967 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFFFFF;
+}
+body{
+    background: linear-gradient(rgb(39, 1, 18),rgb(81, 4, 81));
 }
 .flex{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.tieude{
-    display: flex;
-    background-color: rgb(16, 90, 133);
+/* ---------------------------------header---------------------------------- */
+.menucodinh{
+    background-color: rgb(185, 11, 127);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    display: none;
+    border-bottom: 1px solid #F29438;
 }
-.tieude li:nth-child(5){
-
+.menucodinh>div{
+   width: 90%;
+    margin: 0 auto;
 }
-.tieude li:hover{
-    background-color: darkblue;
-    color: white;
-}
-.tieude li{
-    padding: 15px;
-    list-style: none;
-    margin: 5px;
-    border-right: 1px solid white;
-}
-.diendan{
-display: flex;
-background: linear-gradient(rgb(8, 8, 124),blue);
-align-items: center;
-}
-.diendan img{
-    width: 30%;
-}
-.diendan h2{
-    font-size: 2.5rem;
-    text-shadow: 0 3px 3px 3px;
-    color: white;
-    text-align: center;
-}
-.forum{
-    background-color: skyblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+.menu{
     justify-content: space-between;
-    margin: 0 auto;
-    border-bottom: 1px solid white;
-    text-align: center;
 }
-.avatar{
-    width: 120px;
+.menu>li{
+    list-style: none;
 }
-.forums p{
-    margin: 0 auto;
+.menu>li:hover{
+    background-color: rgb(120, 21, 85);
 }
-.a{
-    direction: none;
-    color: darkblue;
-}
-.foru{
-    font-size: 1.5rem;
-    color: white;
-    margin: 3px auto 0px;
-    background-color: rgb(34, 103, 194);
-    width: 70%;
-    border-radius: 5px 5px 0 0;
-}
-.foru p{
-    padding: 5px;
-}
-.forums :nth-child(4){
-    border-radius: 0 0 5px 5px;
-}
-.forum a{
+.menu>li>a{
+    line-height: 3rem;
+    margin: auto 0;
+    padding: 0.9rem;
+    width: 100%;
+    margin: 5rem 0rem;
     text-decoration: none;
 }
-.forum span{
-    color: darkblue;
+.head{
+    width: 90%;
+    margin: 0 auto;
+}
+.img{
+    width: 10%;
+}
+.img img{
+    width: 100%;
+    margin: 0.4rem 0rem;
+}
+.tieude{
+    width: 90%;
+}
+.tieude1{
+    padding: 0.5rem;
+    border-bottom: 2px solid #F29438;
+}
+.list{
+    justify-content: space-between;
+}
+.list li{
+    list-style: none;
+    width: 20%;
+}
+.list>li>a{
+    padding: 0.85rem;
+    color: black;
+    text-decoration: none;
+}
+.tieude1{
+    justify-content: space-between;
+    margin: 0.4rem 0rem;
+}
+.button>button{
+    width: 40%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+.button>button:nth-child(1){
+    background-color: gray;
+    color: black;
+}
+#sign-in{
+    background-color: rgb(227, 39, 165);
+    color: wheat;
+}
+.button>button:nth-child(1):hover{
+    background-color: rgb(165, 146, 146);
+    color: rgb(183, 190, 194);
+}
+#sign-in:hover{
+    background-color: rgb(143, 5, 90);
+    color:rgb(237, 187, 187)
+}
+.timkiem>input{
+    outline: none;
+    background-color: white;
+    border: none;
+    border-radius: 0.3rem;
+    color: black;
+    padding: 0.4rem;
+    margin-top: 0.5rem;
+}
+.tiemkiem>input::placeholder{
+    color: gray;
+}
+.timkiem>i{
+    color:rgb(227, 39, 165);
+} 
+.bongngo>img:nth-child(1):hover{
+    transform: translateY(-0.5rem);
+    transition: transform 1s;
+}
+.bongngo>img:nth-child(2):hover{
+    transform: translateY(-0.5rem);
+    transition: transform 1s;
+}
+/* ----------------------------------tieude2---------------------------------- */
+.list li a{
+    color: white;
+}
+.list li a:hover{
     cursor: pointer;
 }
-.binhluan{
+.list li{
+    padding: 1rem;
+}
+.list li:hover{
+    background-color: rgb(227, 39, 165);
+    color:wheat;
+    cursor: pointer;
+}
+/* ------------------------------------dangki--------------------------------------- */
+.address,.addres{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 999;
+    color: black;
+}
+.addres-form{
+    flex-direction: column;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.address-form{
+    flex-direction: column;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.dangki>h2,span{
+    color: black;
+}
+.dangki{
+    position: relative;
+    justify-content: center;
+}
+.dangki>span{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.dangki>h2{
+    margin: 1rem;
+}
+.username{
+    margin: 0 auto;
+}
+.username>input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(184, 107, 19) ;
+    color: black;
+    margin: 0 auto;
+}
+.username>p{
+    color: black;
+    margin: 0.5rem;
+}
+.remember{
+    margin: 0.5rem 4rem;
+}
+.remember>p{
+    color: black;
+}
+.remember>input{
+    outline: none;
+    border: 1px solid rgb(184, 107, 19);
+}
+.xacnhan{
+    margin: 0 auto;
+}
+.xacnhan>button{
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
     color: white;
+    background-color: rgb(227, 39, 165);
 }
-.binhluan:hover{
-    color: darkblue;
+.face{
+    justify-content: center;
+    margin: 1rem;
 }
-.quangcao li{
-    list-style: none;
-    background: linear-gradient(darkblue,blue);
-    color:white;
-    width: 10%;
-    padding:4rem;
-    box-sizing: border-box;
-    margin-top: 5px;
-    border-radius: 10px;
+.face>button{
+    padding: 0.5rem;
+    margin: 0rem 0.5rem;
+}
+.face>button>i:nth-child(1){
+    color: black;
+}
+#address-close,#addres-close{
+    border-left: 1px solid rgb(184, 107, 19);
+    border-bottom: 1px solid rgb(184, 107, 19);
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 0rem 0.5rem 0rem 0.5rem;
+}
+.username1{
+    margin: 0 4rem;
+}
+.username1>input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(184, 107, 19) ;
+    color: black;
+    margin: 0 auto;
+}
+.username1>p{
+    margin: 0.5rem;
+    color: black;
+}
+.xacnhan1{
+    margin: 0 5rem;
+}
+.xacnhan1>button{
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(227, 39, 165);
+}
+.list>li{
+    position: relative;
+}
+.giave{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(227, 39, 165);
+    display: none;
+    height: auto;
+    z-index: 999;
+}
+.giave>p{
+    padding: 0.5rem;
+}
+.list>li:nth-child(4):hover .giave{
+    display: block;
+}
+.lichchieu{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(227, 39, 165);
+    display: none;
+    height: auto;
+    z-index: 999;
+}
+.list>li:nth-child(3):hover .lichchieu{
+    display: block;
+}
+.lichchieu>p{
+    padding: 0.5rem;
+}
+.sukien{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(227, 39, 165);
+    height: auto;
+    z-index: 999;
+}
+.sukien>p{
+    padding: 0.5rem;
+}
+.sukien>p>a{
+    text-decoration: none;
+}
+.dichvu{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(227, 39, 165);
+    height: auto;
+    z-index: 999;
+}
+.list1>li:nth-child(4):hover .dichvu{
+    display: block;
+}
+.dichvu>p{
+    padding: 0.5rem;
+}
+.list1>li:nth-child(1):hover .sukien{
+    display: block;
+}
+/* ---------------------------------------danh sách phim------------------------------------- */
+nav>h1{
+    margin: 8rem 0rem 0rem 0.5rem;
+    padding: 0.5rem;
+    border-bottom:1px solid #F29438 ;
+}
+.phimdangchieu{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem 5rem 0rem;
+}
+.phimdangchieu,.phimdangchieu>img,.phimdangchieu>h2{
+    background-color: #281A3A;
+}
+.phimdangchieu>img{
+    width:20% ;
+}
+.phimdangchieu:hover{
+    cursor: pointer;
+}
+.phimsapchieu{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem 5rem  0rem;
+}
+.phimsapchieu,.phimsapchieu>img,.phimsapchieu>h2{
+    background-color: #F29438;
+}
+.phimsapchieu>img{
+    width:20%;
+}
+.phimsapchieu:hover{
+    cursor: pointer;
+}
+/* --------------------------------------movies------------------------------------ */
+.movies{
+    flex-wrap: wrap ;
+}
+.movie{
+    width: 25%;
+    overflow: hidden;
+}
+.movie>div>img{
+    width: 100%;
+}
+.movie>div{
+    margin:0rem 0.4rem 2rem 0rem;
     text-align: center;
 }
-.quangcao li:nth-child(1){
+.movie>div>p{
+    margin: 0.5rem 0rem;
+    color: rgb(227, 39, 165);
+}
+.movie>div{
+    position: relative;
+}
+.movie>div>h2>a:hover{
+    cursor: pointer;
+    color: rgb(165, 159, 159);
+}
+.movie>div>h2>a{
+    text-decoration: none;
+}
+.movie>div>p:hover{
+    cursor: pointer;
+}
+/* -------------------------------------------phim sắp chiếu--------------------------------- */
+.movies1{
+    flex-wrap: wrap;
+    display: none;
+}
+.xemnhieu>span{
+    position: absolute;
+    background-color: red;
+    right: 0rem;
+    padding: 0.3rem;
+    border-radius: 0rem 0rem 0rem 0.5rem;
+}
+#backtotop{
+    width: 3rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 3rem;    
+    border-radius: 50%;
     position: fixed;
-    left: 0.5%;
+    right: 3rem;
+    bottom: 3rem;
+    display: none;
 }
-.quangcao li:nth-child(2){
-    position: fixed;
-    right: 0.5%;
+#backtotop>i{
+    color: black;
 }
-.foot li{
-    list-style: none;padding: 5px;
+.arrow{
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.1rem;
 }
+/* ---------------------------------footer-------------------------------- */
 .foot{
-    margin: 5px;
-    background-color:rgb(16, 90, 133) ;
+    background-color: rgb(43, 42, 42);
+    
+}
+.foot-form h3{
+    color: rgb(227, 39, 165);
+    padding: 0.5rem 0.5rem;
+}
+.foot-form p{
+    padding: 0.5rem 0.5rem;
+}
+.email{
+    width: 69%;
+    flex-direction: column;
+    border:0.3rem solid white;
+    padding: 0.5rem;
+    align-items: center;
+    margin-left:0.5rem ;
+    border-radius: 0.5rem;
+}
+.foot-form1{
+    border-left: 0.2rem solid rgb(227, 39, 165) ;
+}
+.foot-form1 p{
+    padding: 0.5rem 0.5rem;
+}
+.foot-form2 img{
+    margin-top: 0.3rem;
+    width: 100%;
+}
+.logo{
+    background-color: rgb(26, 24, 24);
+    justify-content: center;
+}
+.bangtruyen{
+    background-color:rgb(227, 39, 165) ;
+}
+.bangtruyen{
+    padding: 1rem;
+}
+/* -----------------------------------------đặt vé----------------------------------- */
+.movie>div>button{
+    padding: 0.3rem;
+    width: 50%;
+    margin-top: 0.3rem;
     color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+}
+.movie>div>button:hover{
+    background-color: rgb(242, 52, 52);
+}
+.hang1>button{
+    width: 1.5rem;
+    padding:0.2rem ;
+    color: black;
+    outline: none;
+    border: 1px solid rgb(184, 107, 19) ;
+    border-radius: 0.2rem;
+    background-color: white;
+    margin: 0.3rem;
+}
+.hang1>button:hover{
+    cursor: pointer;
+}
+.chonghe-tieude{
+    justify-content: center;
+}
+.chonghe-tieude{
+    position: relative;
+}
+.chonghe-tieude>span{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.chonghe-tieude>p{
+    margin: 0.5rem;
+}
+.chonghe-tieude>span{
+    border-left: 2px solid #F29438;
+    border-bottom: 2px solid #F29438;
+    border-radius: 0rem 0rem 0rem 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.chonghe{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    color: black;
+    display: none;
+}
+.chonghe-form{
+    width: 30rem;
+    height: 24rem;
+    background-color: rgb(143, 137, 137);
+    border-radius: 0.5rem;
+    margin-top: 5%;
+}
+.chonghe-form>div>input,.chonghe-form>div>select>option,.chonghe-form>div>select{
+    color: black;
+}
+.ghichu>div>div>button{
+    margin: 0.5rem;
+    width: 1.5rem;
+    height: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+}
+.ghichu>div>div>p{
+    margin-top: 0.5rem;
+}
+.ghichu>p{
+    margin-top: 0.5rem;
+}
+.ghichu>div>div:nth-child(2)>button{
+    background-color: rgb(227, 39, 165);
+}
+.ghichu>div>div:nth-child(1)>button{
+    border: 1px solid rgb(184, 107, 19);
+}
+.ghichu{
+    margin-left: 1rem;
+}
+.xacnhan2>button{
+    padding: 0.3rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: rgb(184, 107, 19);
+}
+/* -----------------------------------chi tiết phim----------------------------- */
+.movi{
+    position: relative;
+}
+.chitiet{
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    top: 0%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 80%;
+    margin: auto 0;
+}
+.chitiet>div{
+    margin: auto 0;
+}
+.chitiet>div>p{
+    color:black ;
+    margin: 0.5rem;
+}
+.chitiet>div>p>i{
+    color: rgb(232, 171, 16);
+}
+.chitiet>div>p>strong{
+    color: black;
+}
+.movi:hover .chitiet{
+    display: flex;
+}
+/* ----------------------------------------------trang chủ------------------------------ */
+@keyframes slideshow {
+    20%{
+        margin-left: 0;
+    }
+    30%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -100%;
+    }
+    60%{
+        margin-left:-200% ;
+    }
+    80%{
+        margin-left: -200%;
+    }
+}
+
+.slideshow {
+    overflow: hidden;
+    width: 100%;
+    margin: 5rem 0rem;
+}
+
+.imgslideshow {
+    display: flex;
+    width: 300%;
+    animation: slideshow 20s infinite;
+}
+
+.imgslideshow>img {
+    width: 33.33%;
+}
+/* ------------------------------------lịch chiếu phim--------------------------------- */
+.container{
+    background-color: white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.container>h2{
+    padding: 0.5rem;
+    background-color: #281A3A;
+}
+.phimchieu{
+    background-color:white;
+}
+.phimchieu>div{
+    background-color: rgb(227, 39, 165);
+    width: 100%;
+    margin: 1rem 0rem;
+}
+.phimchieu>div>img{
+    width: 25%;
+    padding: 0.5rem 1rem;
+}
+.phimchieu>div>div{
+    width: 75%;
+    padding: 0.5rem;
+}
+.danhgia{
+    background-color: #281A3A;
+    width: 21%;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.danhgia>i{
+    color: gold;
+    padding: 0.5rem 0.1rem;
+}
+.danhgia>i:nth-child(1){
+    padding: 0.5rem 0.1rem 0.5rem 0.5rem;
+}
+.danhgia>i:nth-child(5){
+    padding: 0.5rem 0.5rem 0.5rem 0.1rem;
+}
+.phimchieu1{
+    background-color: white;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+}
+.phimchieu1>h2{
+    margin: 0.5rem;
+    color: black;
+}
+.thongtin{
+    justify-content: space-between;
+    margin: 1rem;
+}
+.thongtin>p{
+    color: black;
+}
+.giochieu>a>button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #F29438;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 0.2rem;
+}
+.giochieu>a>button:hover{
+    background-color: #f1a458;
+}
+/* ------------------------------------------gia ve--------------------------------------- */
+.giave1>div>img{
+    margin: 0rem 2.5%;
+    width: 95%;
+    padding-bottom:2rem ;
+}
+.giave1{
+    background-color: #1d1725;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.giave1>h2{
+    padding: 1rem;
+    margin: 2rem 0rem 1rem 2rem;
+}
+.giave1>div>p:nth-child(1){
+    margin: 1rem 0.5rem 1rem 2.5%;
+    padding: 0.5rem;
+    background-color: rgb(227, 39, 165);
+    border-radius: 0.2rem;
+    width: 8%;
+}
+.giave1>div>p:nth-child(2),.giave1>div>p:nth-child(3){
+    margin: 1rem 0.5rem 1rem 0.3%;
+    padding: 0.5rem;
+    background-color: rgb(227, 39, 165);
+    border-radius: 0.2rem;
+    width: 8%;
+}
+/* ----------------------------------------thanhvien------------------------------------ */
+.thanhvien>img{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.thanhvien{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    background-color: white;
+}
+.thanhvien>h1,.thanhvien>h3{
+    margin: 0.5rem;
+    color: rgb(227, 39, 165);
+}
+.thanhvien>ul>li,.thanhvien>p{
+    margin: 0.5rem;
+    color: black;
+}
+.thanhvien>ul>li{
+    margin: 0.5rem 2rem;
+}
+.thanhvien>h1{
+    margin-top: 2rem;
+}
+.thanhvien>input{
+    color: black;
+    margin:2.5%;
+    width: 90%;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(194, 190, 190);
+}
+.thanhvien>ul>li>span{
+    color: red;
+}
+/* --------------------------------------giới thiệu--------------------------------------- */
+.gioithieu{
+    margin-top:8rem ;
+    margin-bottom: 0rem;
+    background-color: #1d1725;
+}
+.gioithieucontent{
+    width: 25%;
+}
+.gioithieucontent>p{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    background-color: #F29438;
+}
+.gioithieuimg{
+    width: 75%;
+    overflow: hidden;
+}
+.gioithieuimgs{
+    width: 100%;
+    animation: gioithieuslideshow 30s infinite;
+}
+.gioithieuimgs>img{
+    width: 100%
+}
+@keyframes gioithieuslideshow {
+    10%{
+        margin-left:0 ;
+    }
+    13%{
+        margin-left:-100%;
+    }
+    23%{
+        margin-left:-100%;
+    }
+    26%{
+        margin-left:-200%;
+    }
+    36%{
+        margin-left:-200%
+    }
+    39%{
+        margin-left:-300%;
+    }
+    49%{
+        margin-left:-300%
+    }
+    52%{
+        margin-left:-400%;
+    }
+    62%{
+        margin-left:-400%
+    }
+    65%{
+        margin-left:-500%;
+    }
+    75%{
+        margin-left:-500%
+    }
+    78%{
+        margin-left:-600%;
+    }
+    88%{
+        margin-left:-600%
+    }
+}
+.gioithieu1{
+    background-color: #1d1725;
+    margin-bottom: 5rem;
+}
+.gioithieu1>img{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.gioithieu1>h3,.gioithieu1>p{
+    
+    padding: 0.5rem;
+}
+/* ----------------------------------------ưu đãi và sự kiện--------------------------------- */
+.uudaisukien>h1{
+    padding:1rem 0rem;
+    color: black;
+    margin-left: 40%;
+}
+.uudai>img{
+    padding: 0.5rem;
+    width: 20%;
+    border-radius: 1rem;
+}
+.uudaisukien{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    background-color: white;
+}
+.uudai>div>p{
+    margin: 0.5rem;
+    color: black;
+}
+.uudai>div>h3{
+    margin: 0.5rem;
+    color:rgb(227, 39, 165) ;
+}
+.uudai{
+    border-bottom: 2px solid #F29438;
+    padding: 0.5rem;
+}
+/* ---------------------------------------đặt vé---------------------------------------- */
+.datve-form{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    background-color: #1d1725;
+}
+.chonghe-form1{
+    width: 60%;
+    background-color: gray;
+    margin-left: 18%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.chonghe-form1>div>input,.chonghe-form1>div>select,.chonghe-form1>div>select>option{
+    color: black;
+}
+.chonghe-form1>h2{
+    margin: 0.5rem;
+}
+.chonghe-form1>div{
+    margin: 0.5rem;
+}
+.ghichu1>p{
+    margin-top: 0.5rem;
+}
+.ghichu1>div>div:nth-child(2)>button{
+    margin: 0.5rem;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(184, 107, 19);
+    background-color: rgb(227, 39, 165);
+}
+.ghichu1>div>div:nth-child(1)>button{
+    border: none;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0.7rem;
+    border: 1px solid rgb(184, 107, 19);
+}
+.ghichu1>div>div>p{
+    margin: 0.5rem 0rem;
+}
+.ghichu1{
+    margin-left: 1rem;
+}
+.xacnhan3>button{
+    color: black;
+    background-color: #F29438;
+    border-radius: 0.3rem;
+    width: 20%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+/* ------------------------------------check-------------------------------------- */
+.check-form{
+    position: relative;
+    padding: 2rem;
+    width: 25%;
+    background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    position: fixed;
+    display: none;
+}
+.check-form>i{
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: rgb(15, 171, 15);
+}
+.check-form>h2{
+    color: rgb(227, 39, 165);
+    margin: 0.5rem;
+}
+.check-form>span{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    border-left: 1px solid #F29438;
+    border-bottom: 1px solid #F29438;
 }

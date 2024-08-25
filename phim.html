@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Touch Cinema</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="img/icon-sap-chieu.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<div class="menucodinh">
+    <div>
+        <ul class="menu flex">
+            <li><a href="trang chủ.html">TRANG CHỦ</a></li>
+            <li><a href="phim.html">PHIM</a></li>
+            <li><a href="lichchieu.html">LỊCH CHIẾU</a></li>
+            <li><a href="giave.html">GIÁ VÉ</a></li>
+            <li><a href="thanhvien.html">THÀNH VIÊN</a></li>
+            <li><a href="uudaivasukien.html">ƯU ĐÃI-SỰ KIỆN</a></li>
+            <li><a href="danhgiaphim.html">ĐÁNH GIÁ PHIM</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="">DỊCH VỤ</a></li>
+        </ul>
+    </div>
+</div>
+<div class="head">
+    <div class="flex">
+        <div class="img">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="tieude">
+            <div class="tieude1 flex">
+                <img src="img/dat-ve-ngay.png" alt="hoạt họa">
+                <div class="timkiem">
+                    <input type="text" placeholder="Bạn tìm gì...">
+                    <i class="fa-solid fa-magnifying-glass"></i>   
+                </div>
+                <div class="bongngo">
+                    <img src="img/bong-ngo.png" alt="bỏng ngô">
+                    <img src="img/so-da.png" alt="soda">
+                </div>
+                <div class="button">
+                    <button id="sign">ĐĂNG KÍ</button>
+                        <div class="addres">
+                            <div class="addres-form flex">
+                                <div class="dangki flex">
+                                    <h2>ĐĂNG KÍ</h2>
+                                    <span id="addres-close">x Đóng</span>
+                                </div>
+                                <div class="username">
+                                    <p>Tên đăng nhập</p>
+                                    <input type="text" placeholder="Username">
+                                    <p>Nhập mật khẩu</p>
+                                    <input type="password" placeholder="Password">
+                                    <p>Nhập lại mật khẩu</p>
+                                    <input type="password" placeholder="Confirm password">
+                                </div>
+                                <div class="remember flex">
+                                    <input type="checkbox" class="checkbox" />
+                                    <p>Remember me</p>
+                                </div>
+                                <div class="xacnhan">
+                                    <button>Xác nhận</button>
+                                </div>
+                                <div class="face flex">
+                                    <button><i class="fa-brands fa-facebook"></i></button>
+                                    <button><i class="fa-brands fa-google"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    <button id="sign-in">ĐĂNG NHẬP</button>
+                            <div class="address">
+                                <div class="address-form">  
+                                    <div class="dangki flex">
+                                        <h2>ĐĂNG NHẬP</h2>
+                                        <span id="address-close">x Đóng</span>
+                                    </div>
+                                    <div class="username1">
+                                        <p>Tên đăng nhập</p>
+                                        <input type="text" placeholder="Username">
+                                        <p>Nhập mật khẩu</p>
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                    <div class="remember flex">
+                                        <input type="checkbox" class="checkbox" />
+                                        <p>Remember me</p>
+                                    </div>
+                                    <div class="xacnhan1">
+                                        <button>Xác nhận</button>
+                                    </div>
+                                    <div class="face flex">
+                                        <button><i class="fa-brands fa-facebook"></i></button>
+                                        <button><i class="fa-brands fa-google"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tieude2">
+                        <ul class="list flex">
+                            <li><a href="trang chủ.html">TRANG CHỦ</a></li>
+                            <li><a href="phim.html">PHIM</a></li>
+                            <li><a href="lichchieu.html">LỊCH CHIẾU</a>
+                                <div class="lichchieu">
+                                    <p>Thứ 2-6:9h-21h</p>
+                                    <p>Thứ 7,CN:7h-24h</p>
+                                </div>
+                            </li>
+                            <li><a href="giave.html">GIÁ VÉ</a>
+                                <div class="giave">
+                                    <p>Trẻ em và người cao tuổi(70.000<sup>vnđ</sup>)</p>
+                                    <p>Học sinh ,sinh viên(80.000<sup>vnđ</sup>)</p>
+                                    <p>Người lớn(90.000<sup>vnđ</sup>)</p>
+                                </div>
+                            </li>
+                            <li><a href="thanhvien.html">THÀNH VIÊN</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list list1 flex">
+                            <li><a href="uudaivasukien.html">ƯU ĐÃI-SỰ KIỆN</a>
+                                <div class="sukien">
+                                    <p><a href="uudaivasukien.html">Tặng gấu bông</a></p>
+                                    <p><a href="uudaivasukien.html">Mua 3 tặng 1</a></p>
+                                    <p><a href="uudaivasukien.html">Mua bắp rang bơ tặng coc</a>a</p>
+                                </div>
+                            </li>
+                            <li><a href="danhgiaphim.html">ĐÁNH GIÁ PHIM</a></li>
+                            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                            <li><a href="">DỊCH VỤ</a>
+                                <div class="dichvu">
+                                    <p><a href=""></a>Dịch vụ-Tiện ích</p>
+                                    <p><a href=""></a>Touch voucher</p>
+                                </div>
+                            </li>
+                            <li><a href="">ĐẶT LỊCH</a></li>
+                        </ul>
+                    </div>
+            </div>
+    </div>
+</div>
+</header>
+<nav class="head">
+    <h1>DANH SÁCH PHIM</h1>
+    <div class="danhsachphim flex">
+        <div class="phimdangchieu flex">
+            <img src="img/icon-dat-ve.png" alt="">
+            <h2>PHIM ĐANG CHIẾU</h2>
+        </div>
+        <div class="phimsapchieu flex">
+            <h2>PHIM SẮP CHIẾU</h2>
+            <img src="img/icon-sap-chieu.png" alt="">
+        </div> 
+    </div>
+</nav>
+<nav class="head">
+    <div class="movies1 flex animate__animated animate__fadeIn">
+        <div class="movie">
+            <div class="movi">
+                <img src="img/470x700-5-poster.png" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:103 Phút</p>
+                        <p><strong>Thể loại</strong>:Hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Dealpool</a></h2>
+                <button class="datve16">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 16/09/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/bpic-poster-1200x1800-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:93 Phút</p>
+                        <p><strong>Thể loại</strong>:Hòa nhạc</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Born Pink</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 16/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/captain-america-teaserdebut-1sht-vie-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:81 Phút</p>
+                        <p><strong>Thể loại</strong>:Hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.8/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Captain america</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 20/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/poster-payoff-trap-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:80 Phút</p>
+                        <p><strong>Thể loại</strong>:Hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Bẫy</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 30/09/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/rdoxrn0g21-poster.png" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:83 Phút</p>
+                        <p><strong>Thể loại</strong>:Hành động,phiêu liêu</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Sonic</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 16/09/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/revolver-poster-1-1638x2048px-1b-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:83 Phút</p>
+                        <p><strong>Thể loại</strong>:Báo thù,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Aventure</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 25/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/y5rrebdzsggpkb2u52rxmqtybn0-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:83 Phút</p>
+                        <p><strong>Thể loại</strong>:Hành động,lãng mạng</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Mickey</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 11/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/wrb-poster-470x700-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:83 Phút</p>
+                        <p><strong>Thể loại</strong>:Giả thuyết,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Robot</a></h2>
+                <button class="datve1">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 02/08/2024</p> 
+            </div>
+        </div>
+    </div>
+    <div class="movies flex animate__animated animate__fadeIn">
+        <div class="movie">
+            <div class="movi">
+                <p class="xemnhieu"><span>Xem nhiều</span></p>
+                <img src="img/rsz-vnm3-intl-online-1080x1350-tsr-01-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:95 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.1/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Venom</a></h2>
+                <button class="datve">Đặt vé ngay</button>
+                    <div class="chonghe">
+                        <div class="chonghe-form">
+                            <div class="chonghe-tieude flex">
+                                <p>Vui lòng chọn ngày, giờ xem và ghế ngồi</p>
+                                <span id="chonghe-close">x Đóng</span>
+                            </div>
+                            <div>
+                                <input type="date">
+                                <select name="" id="">
+                                    <option value="#">8h-10h30</option>
+                                    <option value="#">12h-14h</option>
+                                    <option value="">14h-16h</option>
+                                    <option value="">16h-18h</option>
+                                    <option value="">18h30-21h</option>
+                                    <option value="">21h-23h</option>
+                                </select>
+                            </div>
+                            <div class="hang1">
+                                <button>A1</button>
+                                <button>A2</button>
+                                <button>A3</button>
+                                <button>A4</button>
+                                <button>A5</button>
+                                <button>A6</button>
+                                <button>A7</button>
+                                <button>A8</button>
+                                <button>A9</button>
+                            </div>
+                            <div class="hang1">
+                                <button>B1</button>
+                                <button>B2</button>
+                                <button>B3</button>
+                                <button>B4</button>
+                                <button>B5</button>
+                                <button>B6</button>
+                                <button>B7</button>
+                                <button>B8</button>
+                                <button>B9</button>
+                            </div>
+                            <div class="hang1">
+                                <button>C1</button>
+                                <button>C2</button>
+                                <button>C3</button>
+                                <button>C4</button>
+                                <button>C5</button>
+                                <button>C6</button>
+                                <button>C7</button>
+                                <button>C8</button>
+                                <button>C9</button>
+                            </div>
+                            <div class="hang1">
+                                <button>D1</button>
+                                <button>D2</button>
+                                <button>D3</button>
+                                <button>D4</button>
+                                <button>D5</button>
+                                <button>D6</button>
+                                <button>D7</button>
+                                <button>D8</button>
+                                <button>D9</button>
+                            </div>
+                            <div class="hang1">
+                                <button>E1</button>
+                                <button>E2</button>
+                                <button>E3</button>
+                                <button>E4</button>
+                                <button>E5</button>
+                                <button>E6</button>
+                                <button>E7</button>
+                                <button>E8</button>
+                                <button>E9</button>
+                            </div>
+                            <div class="hang1">
+                                <button>F1</button>
+                                <button>F2</button>
+                                <button>F3</button>
+                                <button>F4</button>
+                                <button>F5</button>
+                                <button>F6</button>
+                                <button>F7</button>
+                                <button>F8</button>
+                                <button>F9</button>
+                            </div>
+                            <div class="ghichu flex">
+                                <p>Ghi chú:</p>
+                                <div>
+                                    <div class="flex">
+                                        <button></button>
+                                        <p>Chưa được chọn</p>
+                                    </div>
+                                    <div class="flex">
+                                        <button></button>
+                                        <p>Đã được chọn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xacnhan2">
+                                <button class="butxacnhan">Xác nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                <p>Dự kiến khởi chiếu 30/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <p class="xemnhieu"><span>Giảm 50%</span></p>
+                <img src="img/4-respati-web-app-teaser-poster-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:83 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.7/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Ma cây</a></h2>
+                <button class="datve100">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 16/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <p class="xemnhieu"><span>Xem nhiều</span></p>
+                <img src="img/406x600-mada-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:96 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,kịch tính</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.4/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Ma da</a></h2>
+                <button class="datve2">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 30/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <p class="xemnhieu"><span>Giảm 50%</span></p>
+                <img src="img/kraventhehunterpostervn-poster.jpeg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:99 Phút</p>
+                        <p><strong>Thể loại</strong>:Giả thuyết,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.9/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Kraven</a></h2>
+                <button class="datve3">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 09/09/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/470x700-1721534601-poster.jpg" alt="">
+                <h2><a href="#">Mồ tra tấn</a></h2>
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:106 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.5/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <button class="datve4">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 25/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/379638993-702850075200785-3089017824298610781-n-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:100 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.9/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Con cám</a></h2>
+                <button class="datve5">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 26/09/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/449203794-864527415699166-3750068185901122360-n-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:118 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,hài hước</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.8/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Làm giàu với ma</a></h2>
+                <button class="datve6">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 27/08/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/beetlejuice-beetlejuice-914461307-large-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:86 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,hài hước</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.3/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Ma siêu quậy</a></h2>
+                <button class="datve7">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 02/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/dia-dao-fhsp-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:95 Phút</p>
+                        <p><strong>Thể loại</strong>:Phiêu liêu,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.1/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Địa đạo</a></h2>
+                <button class="datve8">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 09/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/h-nh-tr-nh-c-a-moana-2-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:105 Phút</p>
+                        <p><strong>Thể loại</strong>:Hoạt hình</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.5/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Moana 2</a></h2>
+                <button class="datve9">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 15/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/mv5bowzmotm5ymmtnjlimi00ogrklwiwngutndi2nte3nzzmmddmxkeyxkfqcgdeqxvymtuzmtg2odkz-v1-fmjpg-ux1000-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:113 Phút</p>
+                        <p><strong>Thể loại</strong>:Kịch tính,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.6/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Borderland</a></h2>
+                <button class="datve10">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 30/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/poster-ba-dem-kinh-hoang-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:109 Phút</p>
+                        <p><strong>Thể loại</strong>:Kinh dị,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.0/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Ba đêm kinh hoàng</a></h2>
+                <button class="datve11">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 07/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/mv5bnti0mjiwmdatywy1zc00mduylwi0mzmtzgnjodrln2y3zme2xkeyxkfqcgdeqxvymtm1njm2odg1-v1-fmjpg-ux1000-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:114 Phút</p>
+                        <p><strong>Thể loại</strong>:Máu me,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.2/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Joker</a></h2>
+                <button class="datve12">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 12/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/hpc-intl-online-1080x1350-tsr-01-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:89 Phút</p>
+                        <p><strong>Thể loại</strong>:Tình cảm,phiêu liêu</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:8.8/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Harold</a></h2>
+                <button class="datve13">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 26/09/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/mufasa-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:100 Phút</p>
+                        <p><strong>Thể loại</strong>:Hoang dã,hành động</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.8/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Mufasa</a></h2>
+                <button class="datve14">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 31/10/2024</p> 
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movi">
+                <img src="img/nxcmct-500-1713252327863-poster.jpg" alt="">
+                <div class="chitiet flex animate__animated animate__flipInY">
+                    <div>
+                        <p><strong>Thời gian</strong>:120 Phút</p>
+                        <p><strong>Thể loại</strong>:Tình cảm,học đường</p>
+                        <p><strong>Định dạng</strong>: 2D</p>
+                        <p><strong>Đánh giá</strong>:9.0/10<i class="fa-solid fa-star"></i></p>
+                    </div>
+                </div>
+                <h2><a href="#">Chuyện tình</a></h2>
+                <button class="datve15">Đặt vé ngay</button>
+                <p>Dự kiến khởi chiếu 24/10/2024</p> 
+            </div>
+        </div>
+     </div>
+</nav>
+</div>
+<footer>
+    <div class="foot">
+        <div class="head flex">
+        <div class="flex">
+            <div class="foot-form">
+                <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                <p>Hotline:0123 456 789</p>
+                <p>Giờ làm việc:8h-22h các ngày trong tuần</p>
+                <p>Email: touchcinema@gmail.com</p>
+            </div>
+            <div class="foot-form">
+                <h3>Kết nối với chúng tôi</h3>
+                <div>
+                    <img src="img/icon-fb.png" alt="">
+                    <img src="img/icon-ytb.png" alt="">
+                </div>
+                <h3>Ứng dụng</h3>
+                <img src="img/app-ios.png" alt="">
+                <img src="img/app-android.png" alt="">
+                <p>Phiên bản mobile</p>
+            </div>
+        </div>
+        <div class=" foot-form1 flex">
+                <div>
+                <p>Điều khoản chung</p>
+                <p>Điều khoản giao dịch</p>
+                <p>Chính sách thanh toán</p>
+                <p>Chính sách bảo mật thông tin</p>
+                <div class="email flex">
+                    <img src="img/icon-email.png" alt="">
+                    <p>Đăng kí nhận tin</p>
+                </div>
+        </div>
+        <div class="foot-form2">
+            <p>Câu hỏi thường gặp</p>
+            <p>Hướng dẫn đặt vé online</p>
+            <p>Liên hệ</p>
+            <p>Tuyển dụng</p>
+            <img src="img/dathongbao.png" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="logo flex">
+        <img src="img/partner-2.png" alt="">
+        <img src="img/partner-3.png" alt="">
+    </div>  
+    <div class="bangtruyen">
+        <p>&copy;2018 Touch cinema</p>
+    </div>
+</footer>
+<div id="backtotop">
+    <i class="fa-solid fa-arrow-up arrow flex"></i>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

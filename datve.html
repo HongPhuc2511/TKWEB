@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="img/icon-sap-chieu.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <div class="menucodinh">
+        <div>
+            <ul class="menu flex">
+                <li><a href="trang chủ.html">TRANG CHỦ</a></li>
+                <li><a href="phim.html">PHIM</a></li>
+                <li><a href="lichchieu.html">LỊCH CHIẾU</a></li>
+                <li><a href="giave.html">GIÁ VÉ</a></li>
+                <li><a href="thanhvien.html">THÀNH VIÊN</a></li>
+                <li><a href="uudaivasukien.html">ƯU ĐÃI-SỰ KIỆN</a></li>
+                <li><a href="danhgiaphim.html">ĐÁNH GIÁ PHIM</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="">DỊCH VỤ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <div class="flex">
+            <div class="img">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="tieude">
+                <div class="tieude1 flex">
+                    <img src="img/dat-ve-ngay.png" alt="hoạt họa">
+                    <div class="timkiem">
+                        <input type="text" placeholder="Bạn tìm gì...">
+                        <i class="fa-solid fa-magnifying-glass"></i>   
+                    </div>
+                    <div class="bongngo">
+                        <img src="img/bong-ngo.png" alt="bỏng ngô">
+                        <img src="img/so-da.png" alt="soda">
+                    </div>
+                    <div class="button">
+                        <button id="sign">ĐĂNG KÍ</button>
+                            <div class="addres">
+                                <div class="addres-form flex">
+                                    <div class="dangki flex">
+                                        <h2>ĐĂNG KÍ</h2>
+                                        <span id="addres-close">x Đóng</span>
+                                    </div>
+                                    <div class="username">
+                                        <p>Tên đăng nhập</p>
+                                        <input type="text" placeholder="Username">
+                                        <p>Nhập mật khẩu</p>
+                                        <input type="password" placeholder="Password">
+                                        <p>Nhập lại mật khẩu</p>
+                                        <input type="password" placeholder="Confirm password">
+                                    </div>
+                                    <div class="remember flex">
+                                        <input type="checkbox" class="checkbox" />
+                                        <p>Remember me</p>
+                                    </div>
+                                    <div class="xacnhan">
+                                        <button>Xác nhận</button>
+                                    </div>
+                                    <div class="face flex">
+                                        <button><i class="fa-brands fa-facebook"></i></button>
+                                        <button><i class="fa-brands fa-google"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        <button id="sign-in">ĐĂNG NHẬP</button>
+                                <div class="address">
+                                    <div class="address-form">  
+                                        <div class="dangki flex">
+                                            <h2>ĐĂNG NHẬP</h2>
+                                            <span id="address-close">x Đóng</span>
+                                        </div>
+                                        <div class="username1">
+                                            <p>Tên đăng nhập</p>
+                                            <input type="text" placeholder="Username">
+                                            <p>Nhập mật khẩu</p>
+                                            <input type="password" placeholder="Password">
+                                        </div>
+                                        <div class="remember flex">
+                                            <input type="checkbox" class="checkbox" />
+                                            <p>Remember me</p>
+                                        </div>
+                                        <div class="xacnhan1">
+                                            <button>Xác nhận</button>
+                                        </div>
+                                        <div class="face flex">
+                                            <button><i class="fa-brands fa-facebook"></i></button>
+                                            <button><i class="fa-brands fa-google"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tieude2">
+                            <ul class="list flex">
+                                <li><a href="trang chủ.html">TRANG CHỦ</a></li>
+                                <li><a href="phim.html">PHIM</a></li>
+                                <li><a href="lichchieu.html">LỊCH CHIẾU</a>
+                                    <div class="lichchieu">
+                                        <p>Thứ 2-6:9h-21h</p>
+                                        <p>Thứ 7,CN:7h-24h</p>
+                                    </div>
+                                </li>
+                                <li><a href="giave.html">GIÁ VÉ</a>
+                                    <div class="giave">
+                                        <p>Trẻ em và người cao tuổi(70.000<sup>vnđ</sup>)</p>
+                                        <p>Học sinh ,sinh viên(80.000<sup>vnđ</sup>)</p>
+                                        <p>Người lớn(90.000<sup>vnđ</sup>)</p>
+                                    </div>
+                                </li>
+                                <li><a href="thanhvien.html">THÀNH VIÊN</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list list1 flex">
+                                <li><a href="uudaivasukien.html">ƯU ĐÃI-SỰ KIỆN</a>
+                                    <div class="sukien">
+                                        <p><a href="uudaivasukien.html">Tặng gấu bông</a></p>
+                                        <p><a href="uudaivasukien.html">Mua 3 tặng 1</a></p>
+                                        <p><a href="uudaivasukien.html">Mua bắp rang bơ tặng coc</a>a</p>
+                                    </div>
+                                </li>
+                                <li><a href="danhgiaphim.html">ĐÁNH GIÁ PHIM</a></li>
+                                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                                <li><a href="">DỊCH VỤ</a>
+                                    <div class="dichvu">
+                                        <p>Dịch vụ-Tiện ích</p>
+                                        <p>Touch voucher</p>
+                                    </div>
+                                </li>
+                                <li><a href="">ĐẶT LỊCH</a></li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+    </div>
+    </header>
+    <div class="datve-form head">
+        <div class="chonghe-form1">
+            <h2>Vui lòng chọn ngày, giờ và chỗ ngồi</h2>
+            <div>
+                <input type="date">
+                <select name="" id="">
+                    <option value="#">8h-10h30</option>
+                    <option value="#">12h-14h</option>
+                    <option value="">14h-16h</option>
+                    <option value="">16h-18h</option>
+                    <option value="">18h30-21h</option>
+                    <option value="">21h-23h</option>
+                </select>
+            </div>
+            <div class="hang1">
+                <button>A1</button>
+                <button>A2</button>
+                <button>A3</button>
+                <button>A4</button>
+                <button>A5</button>
+                <button>A6</button>
+                <button>A7</button>
+                <button>A8</button>
+                <button>A9</button>
+            </div>
+            <div class="hang1">
+                <button>B1</button>
+                <button>B2</button>
+                <button>B3</button>
+                <button>B4</button>
+                <button>B5</button>
+                <button>B6</button>
+                <button>B7</button>
+                <button>B8</button>
+                <button>B9</button>
+            </div>
+            <div class="hang1">
+                <button>C1</button>
+                <button>C2</button>
+                <button>C3</button>
+                <button>C4</button>
+                <button>C5</button>
+                <button>C6</button>
+                <button>C7</button>
+                <button>C8</button>
+                <button>C9</button>
+            </div>
+            <div class="hang1">
+                <button>D1</button>
+                <button>D2</button>
+                <button>D3</button>
+                <button>D4</button>
+                <button>D5</button>
+                <button>D6</button>
+                <button>D7</button>
+                <button>D8</button>
+                <button>D9</button>
+            </div>
+            <div class="hang1">
+                <button>E1</button>
+                <button>E2</button>
+                <button>E3</button>
+                <button>E4</button>
+                <button>E5</button>
+                <button>E6</button>
+                <button>E7</button>
+                <button>E8</button>
+                <button>E9</button>
+            </div>
+            <div class="hang1">
+                <button>F1</button>
+                <button>F2</button>
+                <button>F3</button>
+                <button>F4</button>
+                <button>F5</button>
+                <button>F6</button>
+                <button>F7</button>
+                <button>F8</button>
+                <button>F9</button>
+            </div>
+            <div class="ghichu1 flex">
+                <p>Ghi chú:</p>
+                <div>
+                    <div class="flex">
+                        <button></button>
+                        <p>Chưa được chọn</p>
+                    </div>
+                    <div class="flex">
+                        <button></button>
+                        <p>Đã được chọn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="xacnhan3">
+                <button id="butxacnhan1">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+    <div class="check">
+        <div class="check-form flex">
+            <i class="fa-solid fa-check"></i>
+            <h2>Đặt vé thành công</h2>
+            <span id="check-close">x Đóng</span>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="head flex">
+            <div class="flex">
+                <div class="foot-form">
+                    <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                    <p>Hotline:0123 456 789</p>
+                    <p>Giờ làm việc:8h-22h các ngày trong tuần</p>
+                    <p>Email: touchcinema@gmail.com</p>
+                </div>
+                <div class="foot-form">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div>
+                        <img src="img/icon-fb.png" alt="">
+                        <img src="img/icon-ytb.png" alt="">
+                    </div>
+                    <h3>Ứng dụng</h3>
+                    <img src="img/app-ios.png" alt="">
+                    <img src="img/app-android.png" alt="">
+                    <p>Phiên bản mobile</p>
+                </div>
+            </div>
+            <div class=" foot-form1 flex">
+                    <div>
+                    <p>Điều khoản chung</p>
+                    <p>Điều khoản giao dịch</p>
+                    <p>Chính sách thanh toán</p>
+                    <p>Chính sách bảo mật thông tin</p>
+                    <div class="email flex">
+                        <img src="img/icon-email.png" alt="">
+                        <p>Đăng kí nhận tin</p>
+                    </div>
+            </div>
+            <div class="foot-form2">
+                <p>Câu hỏi thường gặp</p>
+                <p>Hướng dẫn đặt vé online</p>
+                <p>Liên hệ</p>
+                <p>Tuyển dụng</p>
+                <img src="img/dathongbao.png" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="logo flex">
+            <img src="img/partner-2.png" alt="">
+            <img src="img/partner-3.png" alt="">
+        </div>  
+        <div class="bangtruyen">
+            <p>&copy;2018 Touch cinema</p>
+        </div>
+    </footer>
+    <div id="backtotop">
+        <i class="fa-solid fa-arrow-up arrow flex"></i>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
