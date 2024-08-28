@@ -1,27 +1,12 @@
-body{
-    background-color: black;
-}
-.quangcao{
+.tieude1>img{
     display: none;
 }
-.tieude li{
-    border: none;
-    padding: 5px;
+.timkiem>i{
+    display: none;
 }
-.tieude{
-    display: block;
-}
-.forum{
+.movie{
     width: 100%;
-    flex-direction: column;
 }
-.diendan img{
-    width: 100%;
-    max-width: 100%;
-}
-.diendan h2{
-    font-size: 1.5rem;
-}
-.foru{
-    width: 100%;
+.menu{
+    display: none;
 }
