@@ -377,7 +377,7 @@ nav>h1{
 }
 .movie>div>img{
     width: 100%;
-    height: 80%;
+    border-radius: 0.5rem;
 }
 .movie>div{
     margin:0rem 0.4rem 2rem 0rem;
@@ -410,7 +410,7 @@ nav>h1{
     background-color: red;
     right: 0rem;
     padding: 0.3rem;
-    border-radius: 0rem 0rem 0rem 0.5rem;
+    border-radius: 0rem 0.5rem 0rem 0.5rem;
 }
 #backtotop{
     width: 3rem;
@@ -1027,4 +1027,67 @@ nav>h1{
 }
 .food-drink-form>div>h2,.food-drink-form>p{
     color: black;
+}
+/* ---------------------------------------bell--------------------------------------- */
+.bell{
+    position:fixed;
+    background-color: #F29438;
+    bottom: 5rem;
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 100;
+    border-radius: 100%;
+   display: block;
+}
+.bell1{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 100%;
+background-color:#e6b98c;
+display: block;
+pointer-events: none;
+animation: 2s bell-ring linear infinite;
+}
+.bell>i{
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+    margin-left: 0.8rem;
+}
+.bell-vong{
+    position: fixed;
+    width: 200%;
+    border: 1px solid #F29438;
+    bottom: 5rem;
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 100;
+    border-radius: 100%;
+    animation: 1s bell-vong linear infinite;
+}
+@keyframes bell-vong{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+@keyframes bell-ring {
+    0%{
+        opacity: 0.4;
+        transform:scale(1.9);
+    }
+    50%{
+        opacity: 0.4;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 0.4;
+        transform: scale(1.9);
+    }
 }

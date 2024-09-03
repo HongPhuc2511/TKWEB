@@ -26,6 +26,15 @@ addressbtn.addEventListener("click",function(){
 addressclose.addEventListener("click",function(){
     document.querySelector(".addres").style.display="none"
 })
+// ----------------------------------đóng đăng kí-------------------------------------
+let xacnhan0=document.querySelector('.xacnhan')
+xacnhan0.addEventListener("click",function(){
+    document.querySelector('.addres').style.display="none"
+})
+let xacnhan2=document.querySelector(".xacnhan1")
+xacnhan2.addEventListener("click",function(){
+    document.querySelector(".address").style.display="none"
+})
 // ---------------------------------------đổi màu ô đặt vé----------------------------------
 // let buttons=document.querySelectorAll('.hang1>button');
 // console.log(buttons)
@@ -211,19 +220,52 @@ checkclose.on("click",function(){
     $('.check-form').css('display','none');
 })
 // ------------------------------------------search-----------------------------------------
-let $search = $('input');
-    let $movi = $('.movi');
+// let $search = $('input');
+//     let $movi = $('.movi');
 
-    $search.on('input', function() {
-        let txt = $(this).val();
-        $movi.css('border', '').removeClass('hover-effect');
+//     $search.on('input', function() {
+//         let txt = $(this).val();
+//         $movi.css('border', '').removeClass('hover-effect');
 
-        let $moviname = $('.movi h2 a');
-        $moviname.each(function() {
-            if ($(this).text().includes(txt)) {
-                $(this).closest('.movi').css('border', '5px solid red').addClass('hover-effect');
-            }
-        });
-    });
+//         let $moviname = $('.movi h2 a');
+//         $moviname.each(function() {
+//             if ($(this).text().includes(txt)) {
+//                 $(this).closest('.movi').css('border', '5px solid red').addClass('hover-effect');
+//             }
+//         });
+//     });
 });
- 
+// -----------------------------------tim phim--------------------------------------
+window.addEventListener('load', function () {
+    let data = new URLSearchParams(window.location.search).get('query');
+    
+    if (data) {
+        document.querySelector('.timkiem input[type="text"]').value = data;
+        movieSearch(data);
+    }
+});
+
+let mess = document.querySelector('.mess');
+if (mess) mess.style.display = 'none';
+let found = false;
+
+function movieSearch(data) {
+    let filter = data.toUpperCase();
+    let list = document.querySelector('.movie');
+    let movies = list.querySelectorAll('.movi');
+
+    for (let i = 0; i < movies.length; i++) {
+        let movie = movies[i];
+        let nameMovie = movie.querySelector('h2 a').textContent || movie.querySelector('h2 a').innerText;
+        if (nameMovie.toUpperCase().indexOf(filter) > -1) {
+            movie.style.display = '';
+            found = true;
+        } else {
+            movie.style.display = 'none';
+        }
+    }
+
+    if (!found && mess) {
+        mess.style.display = 'block';
+    }
+}
